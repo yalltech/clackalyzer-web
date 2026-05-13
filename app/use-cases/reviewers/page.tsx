@@ -156,7 +156,7 @@ const contentFormats = [
   },
   {
     format: 'Blog Articles',
-    description: 'Embedded spectrum plots. Export WAV files for readers to listen and compare.',
+    description: 'Embedded spectrum plots. Export WAV files for readers to listen and analyze.',
   },
   {
     format: 'Discord Communities',
@@ -175,11 +175,11 @@ const videoIntegration = [
   },
   {
     title: 'Narrate the Data',
-    description: '"Notice the peak at 3.2 kHz — that\'s the click frequency. Compared to Board X, this has 6 dB more presence in the high-mids."',
+    description: '"Notice the peak at 3.2 kHz — that\'s the click frequency. Board X measured 6 dB less presence in the high-mids."',
   },
   {
-    title: 'Compare Boards Side-by-Side',
-    description: 'Record the same switch on two different boards. Show snapshots in split-screen. The visual difference makes the point.',
+    title: 'Show Board Differences',
+    description: 'Record the same switch on two different boards. Show each snapshot in sequence. The visual difference in the spectra makes the point.',
   },
 ]
 
@@ -214,7 +214,7 @@ const reviewFramework = [
     section: 'Verdict',
     content: [
       'Do your subjective feelings match the data?',
-      'How does this keyboard compare acoustically to competitors?',
+      'How does this keyboard measure acoustically against competitors?',
       'Would you recommend this to the community? Why?',
       'What audience would love this sound signature?',
     ],
@@ -272,7 +272,7 @@ const publishChecklist = [
   '✓ Documented keyboard config (board, switch, mods, plate)',
   '✓ Took clear snapshots of peak moments',
   '✓ Exported WAV files if sharing with audience',
-  '✓ Compared subjective impressions to objective data (do they match?)',
+  '✓ Verified subjective impressions against objective data (do they match?)',
   '✓ Credited Clackalyzer in video description or article',
   '✓ Verified no technical errors in frequency/dB claims',
   '✓ Shared your methods with audience (FFT size, mic placement)',

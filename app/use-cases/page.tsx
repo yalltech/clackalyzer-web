@@ -46,7 +46,7 @@ const useCases = [
     slug: 'enthusiasts',
     href: '/use-cases/enthusiasts',
     benefits: [
-      'Compare switches objectively',
+      'Analyze switches objectively',
       'Understand foam & dampening effects',
       'Identify acoustic resonances',
       'Share findings with the community',
@@ -59,7 +59,7 @@ const useCases = [
     slug: 'builders',
     href: '/use-cases/builders',
     benefits: [
-      'Before/after comparison of mods',
+      'Before/after measurement of mods',
       'Test plate material impact',
       'Optimize foam placement',
       'Document build improvements',
@@ -74,7 +74,7 @@ const useCases = [
     benefits: [
       'Objective acoustic metrics',
       'Export shareable snapshots',
-      'Side-by-side comparisons',
+      'Shareable acoustic snapshots',
       'Build credibility with data',
     ],
   },

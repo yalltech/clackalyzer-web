@@ -107,7 +107,7 @@ export default function BuildersPage() {
               </div>
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>
-                <span><strong>Revision comparison:</strong> Archive each prototype's recordings. Compare Rev 1 → Rev 2 → Rev 3 acoustically</span>
+                <span><strong>Revision archive:</strong> Record each prototype. Track acoustic changes from Rev 1 → Rev 2 → Rev 3</span>
               </div>
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>
@@ -156,7 +156,7 @@ export default function BuildersPage() {
 const whyBuilders = [
   'Quantify the acoustic impact of material choices (PCB FR-4 vs. aluminum, plate FR-4 vs. brass)',
   'Validate that your flexi-mount design achieves the target resonance frequency',
-  'Compare your prototype against competitor boards objectively',
+  'Measure your prototype against acoustic targets objectively',
   'Document design iterations: Rev 1 → Rev 2 with before-after acoustic proof',
   'Communicate acoustic performance to GB buyers with real measurements, not marketing hype',
   'Make data-driven decisions on gasket strips, stabilizer mounting, foam placement',
@@ -166,7 +166,7 @@ const iterationLoop = [
   'Refine CAD based on measurements and feedback',
   'Build updated prototype with new materials or geometry',
   'Record 2-3 keystrokes with standardized settings',
-  'Compare Peak frequency, click timing, resonance peaks to Rev N-1',
+  'Review peak frequency, click timing, resonance peaks against Rev N-1',
   'Adjust design and repeat',
 ]
 
@@ -189,7 +189,7 @@ const prototypingSteps = [
   {
     title: 'Analysis',
     description: 'Review spectrum. Identify resonances, dampening, or unexpected peaks.',
-    clackalyzerRole: 'Use frequency filters to isolate problem bands. Compare against target prototype.',
+    clackalyzerRole: 'Use frequency filters to isolate problem bands. Measure against target prototype.',
   },
   {
     title: 'Iteration Decision',
@@ -198,8 +198,8 @@ const prototypingSteps = [
   },
   {
     title: 'Next Revision',
-    description: 'Incorporate changes. Build Rev 2, re-measure, compare side-by-side.',
-    clackalyzerRole: 'Same measurement protocol. Direct before-after comparison shows your optimization worked.',
+    description: 'Incorporate changes. Build Rev 2 and re-measure with the same protocol.',
+    clackalyzerRole: 'Same measurement protocol. Before-after measurements show your optimization worked.',
   },
 ]
 
@@ -275,7 +275,7 @@ const builderFaqs = [
   },
   {
     q: 'What FFT size should I use for all my testing?',
-    a: 'Pick one and stick with it. 4096 or 8192 are good standards. All your prototypes should use the same FFT size so Rev-to-Rev comparisons are fair.',
+    a: 'Pick one and stick with it. 4096 or 8192 are good standards. All your prototypes should use the same FFT size so Rev-to-Rev measurements are consistent.',
   },
   {
     q: 'How do I document acoustic targets for my team?',
@@ -291,7 +291,7 @@ const checklist = [
   '✓ Take snapshots of peak moments for design docs',
   '✓ Enable noise calibration if testing in non-ideal acoustics',
   '✓ Export WAV files for archival (lossless)',
-  '✓ Compare Rev N-1 → Rev N acoustically',
+  '✓ Review Rev N-1 → Rev N acoustic measurements',
   '✓ Document design decision + measurement impact in notebook',
   '✓ Share results with team/collaborators before mass production',
 ]

@@ -158,7 +158,7 @@ export default function CalibrationPage() {
 
 const whyCalibrate = [
   'Isolate the true acoustic character of your keyboard',
-  'Compare recordings taken in different rooms fairly',
+  'Analyze recordings from different rooms with consistent noise subtraction',
   'Focus on meaningful frequencies (not background noise)',
   'Detect subtle differences between switch types',
   'Improve the SNR (signal-to-noise ratio) of your analysis',
@@ -198,5 +198,5 @@ const recalibrateTriggers = [
   'You move to a quieter or noisier environment',
   'Testing in a new location or different microphone distance',
   'You change the FFT size (profile invalidates automatically)',
-  'You want to compare profiles from different environments',
+  'You want to analyze profiles from different environments',
 ]

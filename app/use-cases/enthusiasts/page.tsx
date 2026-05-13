@@ -7,7 +7,7 @@ export default function EnthusiastsPage() {
         <div className="container-max">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">For Keyboard Enthusiasts</h1>
           <p className="text-xl text-ck-grid mb-12 max-w-3xl">
-            Deep-dive into switch science. Compare acoustics across boards, switches, and mods. Build your collection with data-driven insights.
+            Deep-dive into switch science. Measure acoustics across boards, switches, and mods. Build your collection with data-driven insights.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 mb-12">
@@ -118,7 +118,7 @@ export default function EnthusiastsPage() {
               </li>
               <li className="flex gap-3">
                 <span className="text-ck-amber">→</span>
-                <span><strong>Personal Blog:</strong> Archive your collection's acoustic profiles and compare over time</span>
+                <span><strong>Personal Blog:</strong> Archive your collection's acoustic profiles and track them over time</span>
               </li>
             </ul>
           </div>
@@ -136,7 +136,7 @@ export default function EnthusiastsPage() {
 
 const whyEnthusiasts = [
   'Measure the acoustic character of every keyboard in your collection',
-  'Compare switches objectively — linear vs. tactile vs. clicky with data',
+  'Analyze switches objectively — linear vs. tactile vs. clicky with data',
   'Document the impact of mods (tape, foam, stabilizer changes)',
   'Share real audio science with your community on Reddit and Discord',
   'Discover which combinations of boards, plates, and switches create your perfect sound',
@@ -147,7 +147,7 @@ const workflow = [
   'Record a few keystrokes on a board or switch',
   'Watch live spectrum update in real-time on your phone',
   'Take snapshots of peak moments for sharing',
-  'Compare with other boards in your library',
+  'Browse and review other boards in your library',
   'Export WAV or share snapshot to show your friends the science',
 ]
 
@@ -165,8 +165,8 @@ const faqs = [
     a: 'Even quiet rooms have HVAC hum or keyboard-to-desk vibration. A 5-second calibration ensures you\'re measuring keyboard acoustics, not room acoustics. Highly recommended.',
   },
   {
-    q: 'Can I compare recordings from different rooms?',
-    a: 'Yes, but use the 200–8 kHz frequency filter preset to normalize room effects. Same FFT size is essential. Clackalyzer makes fair comparisons possible despite different acoustic environments.',
+    q: 'Can I analyze recordings from different rooms?',
+    a: 'Yes, but use the 200–8 kHz frequency filter preset to normalize room effects. Same FFT size is essential. Noise calibration helps ensure consistent results across different acoustic environments.',
   },
   {
     q: 'How do I share my recordings with friends?',

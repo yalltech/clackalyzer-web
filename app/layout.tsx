@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Clackalyzer — Mechanical Keyboard Acoustic Analysis Tool',
-  description: 'Professional-grade FFT-based spectrum analysis for iOS. Analyze keyboard acoustics in real-time, compare builds, and calibrate ambient noise.',
+  description: 'Professional-grade FFT-based spectrum analysis for iOS. Analyze keyboard acoustics in real-time and calibrate ambient noise.',
   applicationName: 'Clackalyzer',
   metadataBase: new URL('https://clackalyzer.com'),
   openGraph: {

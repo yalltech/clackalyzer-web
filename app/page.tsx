@@ -132,7 +132,7 @@ const features = [
   },
   {
     title: 'Recording Library',
-    description: 'Organize recordings, playback with waveform view, create snapshots, and compare builds.',
+    description: 'Organize recordings, playback with waveform view, create snapshots, and archive builds.',
     icon: '📚',
     slug: 'library',
     href: '/features/library',
@@ -163,7 +163,7 @@ const features = [
 const useCases = [
   {
     title: 'Enthusiasts',
-    description: 'Explore switch acoustics objectively and compare builds scientifically.',
+    description: 'Explore switch acoustics objectively and analyze builds scientifically.',
     icon: '🎮',
     slug: 'enthusiasts',
     href: '/use-cases/enthusiasts',

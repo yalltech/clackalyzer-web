@@ -168,7 +168,7 @@ export default function ManufacturersPage() {
               </div>
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>
-                <span><strong>Root cause investigation:</strong> When a batch fails, compare acoustics to previous passing batches. Isolate the change.</span>
+                <span><strong>Root cause investigation:</strong> When a batch fails, check acoustics against previous passing batches. Isolate the change.</span>
               </div>
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>
@@ -227,7 +227,7 @@ const qcWorkflow = [
   'Prototype approved: establish acoustic baseline for the model',
   'Production ramp: test first 10 units. Lock in spec limits.',
   'Ongoing sampling: test 5–15 units per batch. Trend the data.',
-  'Investigation: if 1+ unit fails, compare to baseline. Find root cause.',
+  'Investigation: if 1+ unit fails, check against baseline. Find root cause.',
   'Process adjustment: update supplier, assembly procedure, or materials if needed',
 ]
 
@@ -250,7 +250,7 @@ const qaProgram = [
   },
   {
     title: 'Test & Log',
-    description: 'Test each sample. Record snapshot + WAV. Compare to baseline. Log pass/fail in MES or spreadsheet.',
+    description: 'Test each sample. Record snapshot + WAV. Check against baseline. Log pass/fail in MES or spreadsheet.',
   },
   {
     title: 'Trend & Improve',
@@ -291,7 +291,7 @@ const deviations = [
   {
     symptom: 'New resonance peak at 1.2 kHz',
     cause: 'Case material batch. PCB flexing more. Gasket mounting softened.',
-    action: 'Compare case sourcing date. Check PCB rigidity. Inspect gasket strip.',
+    action: 'Check case sourcing date. Verify PCB rigidity. Inspect gasket strip.',
   },
   {
     symptom: 'Click timing increases (slower)',
@@ -325,7 +325,7 @@ const manufacturerFaqs = [
   },
   {
     q: 'How do I handle a failed batch?',
-    a: 'Don\'t ship. Investigate: compare acoustics to baseline, isolate the change (supplier, process, assembly). Root cause + corrective action before retesting.',
+    a: 'Don\'t ship. Investigate: check acoustics against baseline, isolate the change (supplier, process, assembly). Root cause + corrective action before retesting.',
   },
   {
     q: 'Can I publish acoustic specs in my marketing materials?',

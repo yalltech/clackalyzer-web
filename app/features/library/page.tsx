@@ -7,7 +7,7 @@ export default function LibraryPage() {
         <div className="container-max">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Recording Library</h1>
           <p className="text-xl text-ck-grid mb-12 max-w-3xl">
-            Organize, search, playback, and compare your recordings. Build a personal library of keyboard acoustic profiles.
+            Organize, search, and playback your recordings. Build a personal library of keyboard acoustic profiles.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 mb-12">
@@ -190,10 +190,6 @@ const playbackFeatures = [
   {
     name: 'Metadata Editor',
     description: 'Update session details, swap photos, edit notes after recording.',
-  },
-  {
-    name: 'Multi-Recording Compare',
-    description: 'View multiple recordings in library to compare acoustic profiles.',
   },
 ]
 
