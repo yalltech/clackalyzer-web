@@ -50,13 +50,6 @@ export default function Home() {
                 Calibrate ambient noise in 5 seconds, then analyze with live reduction stats showing exactly what's filtered out.
               </p>
             </div>
-            <div className="card hover:border-ck-red/50 transition">
-              <div className="text-4xl mb-4">🔍</div>
-              <h3 className="text-xl font-semibold mb-3">Build Comparison</h3>
-              <p className="text-ck-grid">
-                Record and compare multiple keyboards side-by-side. Validate foam, plate, and switch modifications objectively.
-              </p>
-            </div>
           </div>
         </div>
       </section>

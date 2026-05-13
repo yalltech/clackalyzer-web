@@ -83,25 +83,6 @@ export default function ReviewersPage() {
             </div>
           </div>
 
-          {/* Comparison Guides */}
-          <div className="bg-ck-card rounded-lg p-8 border border-ck-grid/20 mb-12">
-            <h3 className="text-xl font-bold mb-4 text-ck-teal">📊 Comparison Content Ideas</h3>
-            <p className="text-ck-grid text-sm mb-6">
-              Use Clackalyzer to create definitive comparison content:
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              {comparisonIdeas.map((idea, i) => (
-                <div key={i} className="p-4 bg-ck-navy rounded border border-ck-grid/20">
-                  <p className="font-semibold text-ck-teal mb-2 text-sm">{idea.title}</p>
-                  <p className="text-ck-grid text-xs mb-3">{idea.description}</p>
-                  <div className="text-ck-amber text-xs font-mono">
-                    {idea.clackalyzerRole}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* Audience Engagement */}
           <div className="mb-12">
             <h3 className="text-xl font-bold mb-6">Engaging Your Audience</h3>
@@ -209,7 +190,6 @@ const reviewFramework = [
       'Sound character: bright, warm, punchy, muted?',
       'Feel feedback: smooth, bumpy, crispy, mushy?',
       'Personal reaction: do you love or dislike typing on this?',
-      'Comparison to familiar keyboards: is it louder/quieter?',
     ],
   },
   {
@@ -238,39 +218,6 @@ const reviewFramework = [
       'Would you recommend this to the community? Why?',
       'What audience would love this sound signature?',
     ],
-  },
-]
-
-const comparisonIdeas = [
-  {
-    title: 'Battle Royale',
-    description: 'Record 5 keyboards in same price range. Compare peak frequencies, click timing, sustain.',
-    clackalyzerRole: 'Show all 5 waveforms and snapshots side-by-side',
-  },
-  {
-    title: 'Switch Showdown',
-    description: 'Same board, 4 different switches. Highlight frequency shifts and acoustic character differences.',
-    clackalyzerRole: 'Overlay all 4 spectra. Point out clicky vs. linear differences in real data.',
-  },
-  {
-    title: 'Mod Impact Test',
-    description: 'Before/after acoustic analysis: tape mod, foam, stabilizer swap.',
-    clackalyzerRole: 'Show quantified dB change and frequency shift for each mod',
-  },
-  {
-    title: 'Deep Dive Feature',
-    description: 'Plate material comparison: FR-4 vs. Aluminum vs. Brass on same build.',
-    clackalyzerRole: 'Prove with measurements which material delivers your target sound',
-  },
-  {
-    title: 'Resonance Hunt',
-    description: 'Sweep frequencies with filters. Find hidden peaks in each keyboard.',
-    clackalyzerRole: 'Use lo/hi shelf filters to isolate problematic bands',
-  },
-  {
-    title: 'Blind Test Challenge',
-    description: 'Share WAV files with your audience. Let them guess which keyboard based on sound.',
-    clackalyzerRole: 'Reveal answer with spectrum plots. Educational and engaging.',
   },
 ]
 

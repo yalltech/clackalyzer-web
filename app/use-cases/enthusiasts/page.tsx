@@ -52,38 +52,6 @@ export default function EnthusiastsPage() {
             </div>
           </div>
 
-          {/* Collection Comparison */}
-          <div className="mb-12">
-            <h3 className="text-xl font-bold mb-6">Building Your Acoustic Profile Library</h3>
-            <p className="text-ck-grid mb-6">
-              The real power is comparing your collection. Record the same switch type across 5 different boards, then stack the waveforms side-by-side:
-            </p>
-            <div className="card">
-              <div className="space-y-4">
-                <div className="flex gap-4 items-center text-sm">
-                  <span className="font-mono text-ck-red font-bold">1.</span>
-                  <span className="text-ck-grid"><strong>Record each board</strong> with standardized settings (20 cm mic distance, same switch type, minimal mods)</span>
-                </div>
-                <div className="flex gap-4 items-center text-sm">
-                  <span className="font-mono text-ck-red font-bold">2.</span>
-                  <span className="text-ck-grid"><strong>Use consistent FFT size</strong> across all recordings (4096 recommended) for fair frequency resolution</span>
-                </div>
-                <div className="flex gap-4 items-center text-sm">
-                  <span className="font-mono text-ck-red font-bold">3.</span>
-                  <span className="text-ck-grid"><strong>Take snapshots</strong> during recording to freeze peak moments and compare visual spectra</span>
-                </div>
-                <div className="flex gap-4 items-center text-sm">
-                  <span className="font-mono text-ck-red font-bold">4.</span>
-                  <span className="text-ck-grid"><strong>Export WAV</strong> files for archival. Build a personal library you can re-analyze with new filters later</span>
-                </div>
-                <div className="flex gap-4 items-center text-sm">
-                  <span className="font-mono text-ck-red font-bold">5.</span>
-                  <span className="text-ck-grid"><strong>Share snapshots</strong> to Discord, Reddit, or your community — show the science behind your love for a board</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Mod Testing */}
           <div className="bg-ck-card/50 rounded-lg p-8 border border-ck-grid/20 mb-12">
             <h3 className="text-xl font-bold mb-4">Testing Mods & Modifications</h3>
