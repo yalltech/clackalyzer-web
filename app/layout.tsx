@@ -54,26 +54,10 @@ export default function RootLayout({
 function Header() {
   return (
     <header className="sticky top-0 z-50 bg-ck-navy border-b border-ck-grid/20">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-8">
-          <a href="/" className="flex items-center gap-1">
-            <span className="text-2xl font-bold">Clack</span>
-            <span className="text-2xl font-light text-ck-teal">alyzer</span>
-          </a>
-          <nav className="hidden md:flex gap-8">
-            <a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a>
-            <a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a>
-            <a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a>
-            <a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a>
-          </nav>
-        </div>
-        <a
-          href="https://apps.apple.com/app/clackalyzer/id6479999922"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-ck-red hover:bg-red-600 text-ck-navy px-4 py-2 rounded font-semibold transition"
-        >
-          App Store
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-center">
+        <a href="/" className="flex items-center gap-1">
+          <span className="text-2xl font-bold">Clack</span>
+          <span className="text-2xl font-light text-ck-teal">alyzer</span>
         </a>
       </nav>
     </header>
@@ -83,41 +67,8 @@ function Header() {
 function Footer() {
   return (
     <footer className="bg-ck-card border-t border-ck-grid/20 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <h3 className="font-semibold mb-4">Product</h3>
-            <ul className="space-y-2">
-              <li><a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a></li>
-              <li><a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a></li>
-              <li><a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Company</h3>
-            <ul className="space-y-2">
-              <li><a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a></li>
-              <li><a href="/contact" className="text-ck-grid hover:text-ck-text transition">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-ck-grid hover:text-ck-text transition">Privacy</a></li>
-              <li><a href="#" className="text-ck-grid hover:text-ck-text transition">Terms</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="font-semibold mb-4">Social</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-ck-grid hover:text-ck-text transition">GitHub</a></li>
-              <li><a href="mailto:support@clackalyzer.com" className="text-ck-grid hover:text-ck-text transition">Email</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="border-t border-ck-grid/20 pt-8 text-center text-ck-grid text-sm">
-          <p>&copy; 2026 Yall Tech Studios. All rights reserved.</p>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-ck-grid text-sm">
+        <p>&copy; 2026 Yall Tech Studios. All rights reserved.</p>
       </div>
     </footer>
   )
