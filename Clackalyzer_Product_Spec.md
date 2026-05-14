@@ -594,4 +594,4 @@ Custom `MetropolisKeycap` canvas — each tab button renders as a keycap with:
 ---
 
 *End of Clackalyzer Product Specification v1.4.0*
-*YallTech Studios — scott@mutterer.com*
+*YallTech Studios — support@clackalyzer.com*

@@ -56,7 +56,7 @@ clackalyzer.com
 | **/use-cases/reviewers** | Content creators | Comparison methodology, snapshot sharing, analytics |
 | **/use-cases/manufacturers** | Switch/case companies | QA-testing workflows, batch consistency, testimonials |
 | **/technical** | Technical specs & system requirements | iOS 17+, frameworks (SwiftUI, SwiftData, AVFoundation, Accelerate), bundle ID, iCloud, storage, privacy policy, permissions table |
-| **/about** | Company/studio info | Yall Tech Studios, vision, contact email (scott@mutterer.com), credits |
+| **/about** | Company/studio info | Yall Tech Studios, vision, contact email (support@clackalyzer.com), credits |
 | **/contact** | Contact form or email CTA | Form or mailto link, response expectations |
 
 ---
@@ -324,7 +324,7 @@ Home → Use Cases (Manufacturers) → Technical + Storage/Sync → Contact Form
 1. **Yall Tech Studios:** Brief company description, mission, location
 2. **The Team:** (Optional) Founder/developer info
 3. **Vision:** "Democratizing acoustic analysis for the mechanical keyboard community"
-4. **Contact:** Email (scott@mutterer.com), GitHub, social links
+4. **Contact:** Email (support@clackalyzer.com), GitHub, social links
 5. **Credits:** Libraries, inspirations, community acknowledgments
 
 ---
@@ -338,7 +338,7 @@ Home → Use Cases (Manufacturers) → Technical + Storage/Sync → Contact Form
 - Message
 - Submission callback (Thank you message)
 
-**Fallback:** Direct mailto link to scott@mutterer.com
+**Fallback:** Direct mailto link to support@clackalyzer.com
 
 ---
 

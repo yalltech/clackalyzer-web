@@ -111,7 +111,7 @@ function Footer() {
             <h3 className="font-semibold mb-4">Social</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-ck-grid hover:text-ck-text transition">GitHub</a></li>
-              <li><a href="mailto:scott@mutterer.com" className="text-ck-grid hover:text-ck-text transition">Email</a></li>
+              <li><a href="mailto:support@clackalyzer.com" className="text-ck-grid hover:text-ck-text transition">Email</a></li>
             </ul>
           </div>
         </div>
