@@ -103,10 +103,10 @@ export default function ContactPage() {
               <div className="card">
                 <h3 className="text-xl font-bold mb-2">Email</h3>
                 <a
-                  href="mailto:support@clackalyzer.com"
+                  href="mailto:customerservice@clackalyzer.com"
                   className="text-ck-teal hover:text-ck-red transition font-mono"
                 >
-                  support@clackalyzer.com
+                  customerservice@clackalyzer.com
                 </a>
               </div>
 

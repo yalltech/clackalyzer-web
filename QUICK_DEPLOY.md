@@ -72,7 +72,7 @@ Press `Ctrl+C` to stop.
 ```bash
 # Configure git (one-time)
 git config --global user.name "Scott"
-git config --global user.email "support@clackalyzer.com"
+git config --global user.email "customerservice@clackalyzer.com"
 
 # Commit
 git add .
