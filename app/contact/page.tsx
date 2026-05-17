@@ -142,7 +142,7 @@ export default function ContactPage() {
               <div className="card bg-ck-card/50">
                 <h3 className="text-xl font-bold mb-2">Company</h3>
                 <p className="text-ck-grid text-sm">
-                  Yall Tech Studios<br />
+                  Clacker_Studios<br />
                   Built with ❤️ for the mechanical keyboard community
                 </p>
               </div>

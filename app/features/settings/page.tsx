@@ -189,7 +189,7 @@ export default function SettingsPage() {
               <div className="space-y-2 text-sm text-ck-grid font-mono">
                 <p>App Name: Clackalyzer</p>
                 <p>Version: 1.4.0</p>
-                <p>Developer: Yall Tech Studios</p>
+                <p>Developer: Clacker_Studios</p>
                 <p>Build: [version-specific]</p>
                 <p>Bundle ID: com.yalltech.Clackalyzer</p>
               </div>

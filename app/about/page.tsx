@@ -60,9 +60,9 @@ export default function AboutPage() {
 
             {/* Company */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">Yall Tech Studios</h2>
+              <h2 className="text-2xl font-bold mb-4">Clacker_Studios</h2>
               <p className="text-lg text-ck-grid mb-4">
-                Clackalyzer is developed by Yall Tech Studios, a small team passionate about mechanical keyboards and audio science.
+                Clackalyzer is developed by Clacker_Studios, a small team passionate about mechanical keyboards and audio science.
               </p>
               <p className="text-lg text-ck-grid">
                 We believe in building tools that empower communities. Clackalyzer is designed with the end user in mind: no subscriptions, no analytics, no ads—just pure functionality.

@@ -105,7 +105,7 @@ function Footer() {
           </div>
         </div>
         <div className="border-t border-ck-grid/20 pt-8 text-center text-ck-grid text-sm">
-          <p>&copy; 2026 Yall Tech Studios. All rights reserved.</p>
+          <p>&copy; 2026 Clacker_Studios. All rights reserved.</p>
         </div>
       </div>
     </footer>

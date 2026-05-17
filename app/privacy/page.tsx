@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-3">Overview</h2>
         <p className="text-ck-grid leading-relaxed">
-          Clackalyzer (&ldquo;the App&rdquo;) is a mechanical keyboard acoustic analysis tool developed by Yall Tech Studios. We are committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights.
+          Clackalyzer (&ldquo;the App&rdquo;) is a mechanical keyboard acoustic analysis tool developed by Clacker_Studios. We are committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights.
         </p>
       </section>
 
