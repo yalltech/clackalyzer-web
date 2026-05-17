@@ -139,7 +139,7 @@ export default function Home() {
             <div className="relative w-[190px] lg:w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
                 <Image
-                  src="/images/screenshot-library.png"
+                  src="/images/screenshot-settings.png"
                   alt="Clackalyzer Settings screen"
                   fill
                   className="object-cover object-top"
