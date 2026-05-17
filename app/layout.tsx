@@ -94,7 +94,7 @@ function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Social</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-ck-grid hover:text-ck-text transition">Discord</a></li>
+              <li><a href="https://discord.gg/CduYCuyBSJ" target="_blank" rel="noopener noreferrer" className="text-ck-grid hover:text-ck-text transition">Discord</a></li>
               <li><a href="mailto:info@clackalyzer.com" className="text-ck-grid hover:text-ck-text transition">Email</a></li>
             </ul>
           </div>
