@@ -78,8 +78,8 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div>
                   <p className="text-sm text-ck-grid mb-1">Email</p>
-                  <a href="mailto:customerservice@clackalyzer.com" className="font-mono text-ck-teal hover:text-ck-red transition">
-                    customerservice@clackalyzer.com
+                  <a href="mailto:info@clackalyzer.com" className="font-mono text-ck-teal hover:text-ck-red transition">
+                    info@clackalyzer.com
                   </a>
                 </div>
                 <div>
