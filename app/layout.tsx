@@ -54,10 +54,26 @@ export default function RootLayout({
 function Header() {
   return (
     <header className="sticky top-0 z-50 bg-ck-navy border-b border-ck-grid/20">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-center">
-        <a href="/" className="flex items-center gap-1">
-          <span className="text-2xl font-bold">Clack</span>
-          <span className="text-2xl font-light text-ck-teal">alyzer</span>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-8">
+          <a href="/" className="flex items-center gap-1">
+            <span className="text-2xl font-bold">Clack</span>
+            <span className="text-2xl font-light text-ck-teal">alyzer</span>
+          </a>
+          <nav className="hidden md:flex gap-8">
+            <a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a>
+            <a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a>
+            <a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a>
+            <a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a>
+          </nav>
+        </div>
+        <a
+          href="https://apps.apple.com/app/clackalyzer/id6479999922"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-ck-red hover:bg-red-600 text-white px-4 py-2 rounded font-semibold transition"
+        >
+          App Store
         </a>
       </nav>
     </header>

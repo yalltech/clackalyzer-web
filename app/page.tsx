@@ -25,7 +25,7 @@ export default function Home() {
                   <span className="text-white">Clack</span>
                   <span className="text-ck-teal">alyzer</span>
                 </h1>
-                <p className="text-ck-grid text-sm tracking-[0.2em] mt-1">CLICK. CLACK. ANALYZE.</p>
+                <p className="text-ck-grid text-sm tracking-[0.2em] mt-1">CLICK. CLACK. THOCC. ANALYZE.</p>
               </div>
             </div>
 
