@@ -82,12 +82,6 @@ export default function AboutPage() {
                     info@clackalyzer.com
                   </a>
                 </div>
-                <div>
-                  <p className="text-sm text-ck-grid mb-1">GitHub</p>
-                  <a href="#" className="font-mono text-ck-teal hover:text-ck-red transition">
-                    github.com/yalltech
-                  </a>
-                </div>
               </div>
             </div>
 

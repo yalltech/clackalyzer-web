@@ -63,7 +63,6 @@ function Header() {
           <nav className="hidden md:flex gap-8">
             <a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a>
             <a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a>
-            <a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a>
             <a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a>
           </nav>
         </div>
@@ -90,7 +89,6 @@ function Footer() {
             <ul className="space-y-2">
               <li><a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a></li>
               <li><a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a></li>
-              <li><a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a></li>
             </ul>
           </div>
           <div>
