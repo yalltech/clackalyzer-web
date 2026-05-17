@@ -67,8 +67,41 @@ function Header() {
 function Footer() {
   return (
     <footer className="bg-ck-card border-t border-ck-grid/20 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-ck-grid text-sm">
-        <p>&copy; 2026 Yall Tech Studios. All rights reserved.</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 className="font-semibold mb-4">Product</h3>
+            <ul className="space-y-2">
+              <li><a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a></li>
+              <li><a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a></li>
+              <li><a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Company</h3>
+            <ul className="space-y-2">
+              <li><a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a></li>
+              <li><a href="/contact" className="text-ck-grid hover:text-ck-text transition">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Legal</h3>
+            <ul className="space-y-2">
+              <li><a href="/privacy" className="text-ck-grid hover:text-ck-text transition">Privacy</a></li>
+              <li><a href="/terms" className="text-ck-grid hover:text-ck-text transition">Terms</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-semibold mb-4">Social</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-ck-grid hover:text-ck-text transition">Discord</a></li>
+              <li><a href="mailto:customerservice@clackalyzer.com" className="text-ck-grid hover:text-ck-text transition">Email</a></li>
+            </ul>
+          </div>
+        </div>
+        <div className="border-t border-ck-grid/20 pt-8 text-center text-ck-grid text-sm">
+          <p>&copy; 2026 Yall Tech Studios. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   )
