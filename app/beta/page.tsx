@@ -1,6 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import { Turnstile } from '@marsidev/react-turnstile'
+import type { TurnstileInstance } from '@marsidev/react-turnstile'
 
 export default function BetaPage() {
   const [name, setName] = useState('')
@@ -9,21 +11,29 @@ export default function BetaPage() {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [captchaToken, setCaptchaToken] = useState('')
+  const turnstileRef = useRef<TurnstileInstance>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    if (!captchaToken) {
+      setError('Please complete the verification.')
+      return
+    }
     setLoading(true)
     setError('')
     try {
       const res = await fetch('/api/beta-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, notes }),
+        body: JSON.stringify({ name, email, notes, captchaToken }),
       })
       if (!res.ok) throw new Error('Failed to submit.')
       setSubmitted(true)
     } catch {
       setError('Something went wrong. Please email us directly at info@clackalyzer.com.')
+      turnstileRef.current?.reset()
+      setCaptchaToken('')
     } finally {
       setLoading(false)
     }
@@ -116,7 +126,15 @@ export default function BetaPage() {
                 />
               </div>
 
-              <button type="submit" disabled={loading} className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed">
+              <Turnstile
+                ref={turnstileRef}
+                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                onSuccess={setCaptchaToken}
+                onExpire={() => setCaptchaToken('')}
+                options={{ theme: 'dark' }}
+              />
+
+              <button type="submit" disabled={loading || !captchaToken} className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed">
                 {loading ? 'Sending...' : 'Apply for Beta Access'}
               </button>
 
