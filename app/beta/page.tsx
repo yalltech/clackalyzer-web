@@ -7,15 +7,26 @@ export default function BetaPage() {
   const [email, setEmail] = useState('')
   const [notes, setNotes] = useState('')
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    const subject = encodeURIComponent('Beta Tester Application')
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nNotes:\n${notes}`
-    )
-    window.location.href = `mailto:info@clackalyzer.com?subject=${subject}&body=${body}`
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+    try {
+      const res = await fetch('/api/beta-signup', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, notes }),
+      })
+      if (!res.ok) throw new Error('Failed to submit.')
+      setSubmitted(true)
+    } catch {
+      setError('Something went wrong. Please email us directly at info@clackalyzer.com.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -57,7 +68,7 @@ export default function BetaPage() {
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
               <h2 className="text-2xl font-bold mb-2">You&apos;re on the list!</h2>
-              <p className="text-ck-grid">Your email client should have opened with your application. We&apos;ll be in touch when beta access opens.</p>
+              <p className="text-ck-grid">We&apos;ve received your application and will be in touch when beta access opens.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -105,13 +116,13 @@ export default function BetaPage() {
                 />
               </div>
 
-              <button type="submit" className="btn-primary w-full">
-                Apply for Beta Access
+              <button type="submit" disabled={loading} className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed">
+                {loading ? 'Sending...' : 'Apply for Beta Access'}
               </button>
 
-              <p className="text-ck-grid text-xs text-center">
-                Submitting will open your email client with your application pre-filled.
-              </p>
+              {error && (
+                <p className="text-ck-red text-sm text-center">{error}</p>
+              )}
             </form>
           )}
         </div>
