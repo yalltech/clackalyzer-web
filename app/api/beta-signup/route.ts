@@ -26,9 +26,10 @@ export async function POST(req: NextRequest) {
   })
 
   try {
+    // Notification to the team
     await transporter.sendMail({
       from: `"Clackalyzer" <${process.env.GMAIL_USER}>`,
-      to: 'info@clackalyzer.com',
+      to: 'info@clackerstudios.com',
       replyTo: email,
       subject: `Beta Tester Application — ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nNotes:\n${notes || '(none)'}`,
@@ -38,6 +39,21 @@ export async function POST(req: NextRequest) {
         <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
         <p><strong>Notes:</strong></p>
         <p>${notes ? notes.replace(/\n/g, '<br>') : '<em>(none)</em>'}</p>
+      `,
+    })
+
+    // Confirmation to the applicant
+    await transporter.sendMail({
+      from: `"Clackalyzer" <${process.env.GMAIL_USER}>`,
+      to: email,
+      subject: `You're on the list — Clackalyzer Beta`,
+      text: `Hi ${name},\n\nThanks for signing up to beta test Clackalyzer! We'll be in touch when access opens.\n\n— The Clackalyzer Team`,
+      html: `
+        <h2>You're on the list!</h2>
+        <p>Hi ${name},</p>
+        <p>Thanks for signing up to beta test Clackalyzer. We'll reach out as soon as access opens.</p>
+        <p>In the meantime, feel free to reply to this email with any questions.</p>
+        <p>— The Clackalyzer Team</p>
       `,
     })
 
