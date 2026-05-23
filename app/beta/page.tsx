@@ -12,6 +12,7 @@ export default function BetaPage() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [captchaToken, setCaptchaToken] = useState('')
+  const [captchaError, setCaptchaError] = useState(false)
   const turnstileRef = useRef<TurnstileInstance>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -129,10 +130,14 @@ export default function BetaPage() {
               <Turnstile
                 ref={turnstileRef}
                 siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-                onSuccess={setCaptchaToken}
+                onSuccess={(token) => { setCaptchaToken(token); setCaptchaError(false) }}
                 onExpire={() => setCaptchaToken('')}
+                onError={() => setCaptchaError(true)}
                 options={{ theme: 'dark' }}
               />
+              {captchaError && (
+                <p className="text-ck-red text-sm">Verification failed to load. Please refresh the page.</p>
+              )}
 
               <button type="submit" disabled={loading || !captchaToken} className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed">
                 {loading ? 'Sending...' : 'Apply for Beta Access'}
