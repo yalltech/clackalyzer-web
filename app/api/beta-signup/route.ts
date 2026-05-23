@@ -1,15 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import nodemailer from 'nodemailer'
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-})
+export const runtime = 'nodejs'
 
 export async function POST(req: NextRequest) {
   const { name, email, notes } = await req.json()
@@ -17,6 +9,21 @@ export async function POST(req: NextRequest) {
   if (!name || !email) {
     return NextResponse.json({ error: 'Name and email are required.' }, { status: 400 })
   }
+
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_APP_PASSWORD) {
+    console.error('Missing GMAIL_USER or GMAIL_APP_PASSWORD env vars')
+    return NextResponse.json({ error: 'Server misconfiguration.' }, { status: 500 })
+  }
+
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_APP_PASSWORD.replace(/\s/g, ''),
+    },
+  })
 
   try {
     await transporter.sendMail({
