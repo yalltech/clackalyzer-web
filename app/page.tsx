@@ -118,8 +118,8 @@ export default function Home() {
 
           {/* Phone mockups */}
           <div className="flex-1 flex items-end justify-center gap-3 lg:gap-4 relative">
-            {/* Left phone */}
-            <div className="relative w-[190px] lg:w-[220px] mb-[-20px] opacity-80">
+            {/* Left + right phones — desktop only */}
+            <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
                 <Image
                   src="/images/screenshot-library.png"
@@ -129,7 +129,7 @@ export default function Home() {
                 />
               </PhoneFrame>
             </div>
-            {/* Center phone */}
+            {/* Center phone — always visible */}
             <div className="relative w-[200px] lg:w-[240px] z-10">
               <PhoneFrame>
                 <Image
@@ -140,8 +140,7 @@ export default function Home() {
                 />
               </PhoneFrame>
             </div>
-            {/* Right phone */}
-            <div className="relative w-[190px] lg:w-[220px] mb-[-20px] opacity-80">
+            <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
                 <Image
                   src="/images/screenshot-settings.png"
@@ -158,7 +157,7 @@ export default function Home() {
       {/* Feature strip */}
       <section className="border-t border-white/10 bg-[#09090A]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
 
             <div className="flex flex-col gap-2">
               <svg className="text-ck-teal" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
