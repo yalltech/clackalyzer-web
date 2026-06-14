@@ -122,8 +122,8 @@ export default function Home() {
             <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
                 <Image
-                  src="/images/screenshot-library.png"
-                  alt="Clackalyzer Library screen"
+                  src="/images/screenshot-sessions.png"
+                  alt="Clackalyzer Sessions screen"
                   fill
                   className="object-cover object-top"
                 />
@@ -133,8 +133,8 @@ export default function Home() {
             <div className="relative w-[200px] lg:w-[240px] z-10">
               <PhoneFrame>
                 <Image
-                  src="/images/IMG_2096.png"
-                  alt="Clackalyzer Frequency Monitor screen"
+                  src="/images/screenshot-analyze.png"
+                  alt="Clackalyzer Frequency Analyzer screen"
                   fill
                   className="object-cover object-top"
                 />
@@ -143,8 +143,8 @@ export default function Home() {
             <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
                 <Image
-                  src="/images/screenshot-settings.png"
-                  alt="Clackalyzer Settings screen"
+                  src="/images/screenshot-compare.png"
+                  alt="Clackalyzer Compare screen"
                   fill
                   className="object-cover object-top"
                 />
