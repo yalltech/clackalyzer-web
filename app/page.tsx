@@ -89,10 +89,12 @@ export default function Home() {
                 </div>
               </span>
               <a
-                href="/beta"
+                href="https://discord.gg/CduYCuyBSJ"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-ck-teal text-black px-6 py-3 rounded-xl font-semibold hover:bg-ck-teal/80 transition"
               >
-                Beta Testers Wanted
+                Join our Discord
               </a>
               </div>
 

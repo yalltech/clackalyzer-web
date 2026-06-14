@@ -74,10 +74,12 @@ function Header() {
             In Development
           </span>
           <a
-            href="/beta"
+            href="https://discord.gg/CduYCuyBSJ"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-1.5 bg-ck-teal text-black px-4 py-2 rounded font-semibold text-sm hover:bg-ck-teal/80 transition"
           >
-            Beta Testers Wanted
+            Join Discord
           </a>
         </div>
       </nav>
