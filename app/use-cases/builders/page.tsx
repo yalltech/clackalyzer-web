@@ -99,7 +99,7 @@ export default function BuildersPage() {
             <div className="space-y-3 text-sm text-ck-grid">
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>
-                <span><strong>Snapshots for design docs:</strong> Include Clackalyzer spectrum plots in your keyboard spec sheets and GitHub repos</span>
+                <span><strong>Snapshots for design docs:</strong> Include Clackalyzer spectrum plots in your keyboard spec sheets and design documents</span>
               </div>
               <div className="flex gap-3">
                 <span className="text-ck-amber">→</span>

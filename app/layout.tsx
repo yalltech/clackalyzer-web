@@ -54,11 +54,32 @@ export default function RootLayout({
 function Header() {
   return (
     <header className="sticky top-0 z-50 bg-ck-navy border-b border-ck-grid/20">
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-center">
-        <a href="/" className="flex items-center gap-1">
-          <span className="text-2xl font-bold">Clack</span>
-          <span className="text-2xl font-light text-ck-teal">alyzer</span>
-        </a>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-8">
+          <a href="/" className="flex items-center gap-1">
+            <span className="text-2xl font-bold">Clack</span>
+            <span className="text-2xl font-light text-ck-teal">alyzer</span>
+          </a>
+          <nav className="hidden md:flex gap-8">
+            <a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a>
+            <a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a>
+            <a href="/about" className="text-ck-grid hover:text-ck-text transition">About</a>
+          </nav>
+        </div>
+        <div className="flex items-center gap-3">
+          <span className="inline-flex items-center gap-2 border border-ck-teal/50 text-ck-teal px-4 py-2 rounded font-semibold text-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            In Development
+          </span>
+          <a
+            href="/beta"
+            className="hidden sm:inline-flex items-center gap-1.5 bg-ck-teal text-black px-4 py-2 rounded font-semibold text-sm hover:bg-ck-teal/80 transition"
+          >
+            Beta Testers Wanted
+          </a>
+        </div>
       </nav>
     </header>
   )
@@ -74,7 +95,6 @@ function Footer() {
             <ul className="space-y-2">
               <li><a href="/features" className="text-ck-grid hover:text-ck-text transition">Features</a></li>
               <li><a href="/use-cases" className="text-ck-grid hover:text-ck-text transition">Use Cases</a></li>
-              <li><a href="/technical" className="text-ck-grid hover:text-ck-text transition">Technical</a></li>
             </ul>
           </div>
           <div>
