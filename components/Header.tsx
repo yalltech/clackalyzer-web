@@ -24,31 +24,31 @@ export function Header() {
 
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-3">
-          <span className="inline-flex items-center gap-2 border border-ck-teal/50 text-ck-teal px-4 py-2 rounded font-semibold text-sm">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-            </svg>
-            In Development
-          </span>
           <a
-            href="https://discord.gg/CduYCuyBSJ"
+            href="https://apps.apple.com/app/clackalyzer/id6479999922"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-ck-teal text-black px-4 py-2 rounded font-semibold text-sm hover:bg-ck-teal/80 transition"
+            className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded font-semibold text-sm hover:bg-white/90 transition"
           >
-            Join Discord
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Download on App Store
           </a>
         </div>
 
-        {/* Mobile: Discord + hamburger */}
+        {/* Mobile: App Store + hamburger */}
         <div className="flex md:hidden items-center gap-3">
           <a
-            href="https://discord.gg/CduYCuyBSJ"
+            href="https://apps.apple.com/app/clackalyzer/id6479999922"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 bg-ck-teal text-black px-3 py-1.5 rounded font-semibold text-sm hover:bg-ck-teal/80 transition"
+            className="inline-flex items-center gap-1.5 bg-white text-black px-3 py-1.5 rounded font-semibold text-sm hover:bg-white/90 transition"
           >
-            Discord
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            </svg>
+            Download
           </a>
           <button
             onClick={() => setOpen(o => !o)}
@@ -73,7 +73,8 @@ export function Header() {
         <div className="md:hidden border-t border-ck-grid/20 bg-ck-navy px-4 py-4 flex flex-col gap-1">
           <a href="/features" onClick={() => setOpen(false)} className="py-3 text-ck-grid hover:text-ck-text transition border-b border-ck-grid/10">Features</a>
           <a href="/use-cases" onClick={() => setOpen(false)} className="py-3 text-ck-grid hover:text-ck-text transition border-b border-ck-grid/10">Use Cases</a>
-          <a href="/about" onClick={() => setOpen(false)} className="py-3 text-ck-grid hover:text-ck-text transition">About</a>
+          <a href="/about" onClick={() => setOpen(false)} className="py-3 text-ck-grid hover:text-ck-text transition border-b border-ck-grid/10">About</a>
+          <a href="https://discord.gg/CduYCuyBSJ" target="_blank" rel="noopener noreferrer" className="py-3 text-ck-grid hover:text-ck-text transition">Discord</a>
         </div>
       )}
     </header>
