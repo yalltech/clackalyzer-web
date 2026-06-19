@@ -80,7 +80,7 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center gap-3">
                 <a
-                  href="https://apps.apple.com/app/clackalyzer/id6479999922"
+                  href="https://apps.apple.com/us/app/clackalyzer/id6768801860"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition"

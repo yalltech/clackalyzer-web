@@ -25,7 +25,7 @@ export function Header() {
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="https://apps.apple.com/app/clackalyzer/id6479999922"
+            href="https://apps.apple.com/us/app/clackalyzer/id6768801860"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-black px-4 py-2 rounded font-semibold text-sm hover:bg-white/90 transition"
@@ -40,7 +40,7 @@ export function Header() {
         {/* Mobile: App Store + hamburger */}
         <div className="flex md:hidden items-center gap-3">
           <a
-            href="https://apps.apple.com/app/clackalyzer/id6479999922"
+            href="https://apps.apple.com/us/app/clackalyzer/id6768801860"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 bg-white text-black px-3 py-1.5 rounded font-semibold text-sm hover:bg-white/90 transition"
