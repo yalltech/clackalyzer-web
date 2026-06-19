@@ -5,38 +5,38 @@ export default function Home() {
     <div className="bg-black text-white">
 
       {/* Hero */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-8 lg:py-24">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
 
           {/* Left column */}
-          <div className="flex-1 flex flex-col gap-8 max-w-xl">
+          <div className="flex-1 flex flex-col gap-4 lg:gap-8 max-w-xl w-full">
 
             {/* Icon + logo */}
-            <div className="flex items-center gap-5">
+            <div className="flex items-center gap-4">
               <Image
                 src="/images/app-icon.png"
                 alt="Clackalyzer app icon"
                 width={90}
                 height={90}
-                className="rounded-2xl"
+                className="rounded-2xl w-14 h-14 lg:w-[90px] lg:h-[90px]"
               />
               <div>
-                <h1 className="text-5xl font-bold leading-none tracking-tight">
+                <h1 className="text-4xl lg:text-5xl font-bold leading-none tracking-tight">
                   <span className="text-white">Clack</span>
                   <span className="text-ck-teal">alyzer</span>
                 </h1>
-                <p className="text-ck-grid text-sm tracking-[0.2em] mt-1">CLICK. CLACK. THOCC. ANALYZE.</p>
+                <p className="text-ck-grid text-xs lg:text-sm tracking-[0.2em] mt-1">CLICK. CLACK. THOCC. ANALYZE.</p>
               </div>
             </div>
 
-            {/* Hero text */}
-            <p className="text-2xl lg:text-3xl font-light leading-snug">
+            {/* Hero text — hidden on mobile to save space */}
+            <p className="hidden lg:block text-2xl lg:text-3xl font-light leading-snug">
               The ultimate sound analyzer<br />
               for <span className="text-ck-teal font-medium">mechanical keyboard</span> enthusiasts.
             </p>
 
-            {/* Feature bullets */}
-            <div className="flex flex-col gap-5">
+            {/* Feature bullets — desktop only */}
+            <div className="hidden lg:flex flex-col gap-5">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-ck-teal/20 border border-ck-teal/40 flex items-center justify-center shrink-0">
                   <svg className="text-ck-teal" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -77,15 +77,15 @@ export default function Home() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3 lg:gap-4">
               <div className="flex flex-wrap items-center gap-3">
                 <a
                   href="https://apps.apple.com/us/app/clackalyzer/id6768801860"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-white/90 transition"
+                  className="inline-flex items-center gap-3 bg-white text-black px-5 py-2.5 lg:px-6 lg:py-3 rounded-xl font-semibold text-sm lg:text-base hover:bg-white/90 transition"
                 >
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
                   </svg>
                   Download on the App Store
@@ -94,14 +94,14 @@ export default function Home() {
                   href="https://discord.gg/CduYCuyBSJ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 border border-ck-grid/40 text-ck-grid hover:text-ck-text hover:border-ck-grid/70 px-6 py-3 rounded-xl font-medium transition"
+                  className="hidden lg:inline-flex items-center gap-2 border border-ck-grid/40 text-ck-grid hover:text-ck-text hover:border-ck-grid/70 px-6 py-3 rounded-xl font-medium transition"
                 >
                   Join our Discord
                 </a>
               </div>
 
-              {/* Badges */}
-              <div className="flex flex-wrap gap-4 text-ck-grid text-xs">
+              {/* Badges — desktop only */}
+              <div className="hidden lg:flex flex-wrap gap-4 text-ck-grid text-xs">
                 <span className="flex items-center gap-1.5">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
                   Made for iOS
