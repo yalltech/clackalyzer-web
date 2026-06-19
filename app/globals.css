@@ -58,6 +58,10 @@
   }
 }
 
+/* Hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
 /* Smooth scrolling for hash links */
 @supports (scroll-behavior: smooth) {
   html {

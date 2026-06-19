@@ -118,38 +118,36 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Phone mockups */}
-          <div className="flex-1 flex items-end justify-center gap-3 lg:gap-4 relative">
-            {/* Left + right phones — desktop only */}
-            <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
+          {/* Mobile: horizontal snap-scroll gallery */}
+          <div className="lg:hidden w-full -mx-4 px-8 overflow-x-auto no-scrollbar snap-x snap-mandatory flex gap-5 py-4">
+            {[
+              { src: '/images/screenshot-analyze.png', alt: 'Real-time FFT spectrum analyzer' },
+              { src: '/images/screenshot-sessions.png', alt: 'Sessions and recording library' },
+              { src: '/images/screenshot-compare.png', alt: 'A/B comparison view' },
+            ].map((img) => (
+              <div key={img.src} className="snap-center shrink-0 w-[200px]">
+                <PhoneFrame>
+                  <Image src={img.src} alt={img.alt} fill sizes="200px" className="object-cover object-top" />
+                </PhoneFrame>
+              </div>
+            ))}
+          </div>
+
+          {/* Desktop: three-phone stack */}
+          <div className="hidden lg:flex flex-1 items-end justify-center gap-4 relative">
+            <div className="relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
-                <Image
-                  src="/images/screenshot-sessions.png"
-                  alt="Clackalyzer Sessions screen"
-                  fill
-                  className="object-cover object-top"
-                />
+                <Image src="/images/screenshot-sessions.png" alt="Clackalyzer Sessions screen" fill sizes="220px" className="object-cover object-top" />
               </PhoneFrame>
             </div>
-            {/* Center phone — always visible */}
-            <div className="relative w-[200px] lg:w-[240px] z-10">
+            <div className="relative w-[240px] z-10">
               <PhoneFrame>
-                <Image
-                  src="/images/screenshot-analyze.png"
-                  alt="Clackalyzer Frequency Analyzer screen"
-                  fill
-                  className="object-cover object-top"
-                />
+                <Image src="/images/screenshot-analyze.png" alt="Clackalyzer Frequency Analyzer screen" fill sizes="240px" className="object-cover object-top" />
               </PhoneFrame>
             </div>
-            <div className="hidden lg:block relative w-[220px] mb-[-20px] opacity-80">
+            <div className="relative w-[220px] mb-[-20px] opacity-80">
               <PhoneFrame>
-                <Image
-                  src="/images/screenshot-compare.png"
-                  alt="Clackalyzer Compare screen"
-                  fill
-                  className="object-cover object-top"
-                />
+                <Image src="/images/screenshot-compare.png" alt="Clackalyzer Compare screen" fill sizes="220px" className="object-cover object-top" />
               </PhoneFrame>
             </div>
           </div>

@@ -4,16 +4,9 @@ export default function BetaPage() {
       <section className="py-16 md:py-24">
         <div className="container-max max-w-2xl text-center">
 
-          <span className="inline-flex items-center gap-2 border border-ck-teal/50 text-ck-teal px-3 py-1 rounded text-sm font-semibold mb-6">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-            </svg>
-            In Development
-          </span>
-
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Get Involved</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Join the Community</h1>
           <p className="text-lg text-ck-grid mb-10">
-            Clackalyzer is under active development. The best way to follow along, share feedback, and get early access is to join our Discord community.
+            Connect with other keyboard enthusiasts, share recordings, get help, and follow along as we keep building.
           </p>
 
           <a
